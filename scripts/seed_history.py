@@ -1,6 +1,12 @@
+import sys
+from pathlib import Path
+from datetime import datetime, timedelta
+
+# Ensure project root is in sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from app.database import SessionLocal
 from app.models import PreviousLoan, Customer
-from datetime import datetime, timedelta
 
 db = SessionLocal()
 

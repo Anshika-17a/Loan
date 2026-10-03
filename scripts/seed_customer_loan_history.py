@@ -1,6 +1,12 @@
+import sys
+from pathlib import Path
+from datetime import datetime, timedelta
+
+# Ensure project root is in sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from app.database import SessionLocal
 from app.models import Customer, PreviousLoan
-from datetime import datetime, timedelta
 
 db = SessionLocal()
 
@@ -30,9 +36,9 @@ if customer:
         db.add(l1)
         db.add(l2)
         db.commit()
-        print("History added for vijay.")
+        print(f"Loan history added for {pan}.")
     else:
-        print("History already exists for vijay.")
+        print(f"Loan history already exists for {pan}.")
 else:
     print(f"Customer {pan} not found.")
 

@@ -1,7 +1,13 @@
-from app.database import SessionLocal
-from app.models import Customer, PreviousLoan, ScoreHistory
+import sys
+from pathlib import Path
 from datetime import datetime
 import json
+
+# Ensure project root is in sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from app.database import SessionLocal
+from app.models import Customer, PreviousLoan, ScoreHistory
 
 db = SessionLocal()
 

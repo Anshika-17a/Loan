@@ -40,13 +40,15 @@ const findPans = () => {
     }
 
     const fs = require('fs');
+    const path = require('path');
     let output = "------------------------------\n";
     for (const [category, items] of Object.entries(targets)) {
         output += `${category}:\n`;
         items.forEach(item => output += `  PAN: ${item.pan} | Score: ${item.score}\n`);
     }
     output += "------------------------------\n";
-    fs.writeFileSync('pans_js.txt', output);
+    const outputPath = path.join(__dirname, '..', 'pans_js.txt');
+    fs.writeFileSync(outputPath, output);
     console.log("Done writing to pans_js.txt");
 };
 

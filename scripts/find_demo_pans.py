@@ -1,5 +1,6 @@
 import random
 import string
+from pathlib import Path
 
 def js_hash(s):
     hash_val = 0
@@ -77,7 +78,8 @@ def find_pans():
             
         count += 1
         
-    with open("pans.txt", "w") as f:
+    output_path = Path(__file__).resolve().parent.parent / "pans.txt"
+    with open(output_path, "w") as f:
         f.write("-" * 30 + "\n")
         for category, items in targets.items():
             f.write(f"{category}:\n")
