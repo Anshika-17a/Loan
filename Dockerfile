@@ -11,7 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the entire application code
 COPY ./app /app/app
-COPY .env /app/.env
 
 # Command to run the application (will be customized later)
 # This uses uvicorn to serve the FastAPI app
