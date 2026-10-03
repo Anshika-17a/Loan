@@ -1,0 +1,20 @@
+# Virtual Environment
+venv/
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Data and Models (potentially large/sensitive)
+data/
+models/
+evaluations/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

@@ -1,0 +1,22 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+psycopg2-binary
+python-dotenv
+# ML Libraries
+pandas
+numpy
+scikit-learn
+xgboost
+shap # For model explainability
+joblib # For saving the model
+python-multipart
+itsdangerous
+Jinja2
+python-jose
+passlib[bcrypt]
+# CORS FIX
+fastapi-cors  # Or just starlette if needed, but we'll use a direct FastAPI import
+plaid-python
+bcrypt==3.2.2

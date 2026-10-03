@@ -1,0 +1,14 @@
+------------------------------
+Low (< 500):
+  PAN: KLMNO9242O | Score: 375
+  PAN: KLMNO9367Z | Score: 454
+  PAN: FGHIJ4674U | Score: 310
+Medium (600-700):
+  PAN: KLMNO2786H | Score: 644
+  PAN: FGHIJ9593K | Score: 615
+  PAN: KLMNO3838E | Score: 610
+High (> 750):
+  PAN: FGHIJ9780B | Score: 896
+  PAN: KLMNO1230Z | Score: 795
+  PAN: KLMNO6599B | Score: 794
+------------------------------
