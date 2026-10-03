@@ -1,20 +1,50 @@
-# Virtual Environment
-venv/
-.env
-
-# Python artifacts
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.egg-info/
+dist/
+build/
 
-# Data and Models (potentially large/sensitive)
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Data & Model Artifacts
 data/
 models/
 evaluations/
 
-# OS Specific
+# Demo / Scratch Output Files
+pans.txt
+pans_js.txt
+
+# Operating System Files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# VS Code
+# IDE / Editor
 .vscode/
+.idea/
+*.swp
+*.swo
